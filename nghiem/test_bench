@@ -1,1 +1,19 @@
+syms x;
+
+f=@(x)3*x^3-8*x^2-20*x+16;   % Phuong trinh 1
+fp=@(x)(3*x^3-8*x^2+16)/20;  % Phuong trinh hoi tu 1
+a = 0.2;
+b = 1;
+error = 0.005;
+
+f=@(x)x-sin(x)-0.25;          %Phuong trinh 2
+fp=@(x)sin(x)+0.25;           %Phuong trinh hoi tu 2
+a = -1;
+b = 2;
+error = 0.005;
+
+chiadoi(f,a,b,error)
+lap(fp,a,b,error)
+tieptuyen(f,a,b,error)
+
 
